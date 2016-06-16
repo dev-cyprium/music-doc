@@ -1,0 +1,31 @@
+body {
+	padding-top: 40px;
+}
+
+#welcome {
+	position: relative;
+	z-index: 0;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	#welcome-msg {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 99;
+		h3 {
+			padding-left: 5%;
+		}
+		a {
+			position: absolute;
+			font-size: 2em;
+			margin-top: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #666666;
+			border-color: #1a1a1a;
+		}
+	}
+}
