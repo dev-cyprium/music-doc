@@ -12,7 +12,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-gem 'minitest-reporters'
 
 group :development, :test do
   gem 'byebug'
@@ -22,7 +21,16 @@ group :production do
 	gem 'rails_12factor'
 end
 
+group :test do
+	gem 'minitest'
+	gem 'minitest-reporters'
+	gem 'ruby-prof'
+end
+
 group :development do
+	gem 'guard'
+	gem 'guard-minitest'
+
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
