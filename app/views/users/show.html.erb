@@ -1,0 +1,70 @@
+<div id="user-top">
+	<%= image_tag avatar_url(@user) %>
+	<h1><%= @user.email %></h1>
+</div>
+
+<section class="seperator"></section>
+
+<div id="user-content" class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<h2>About</h2>
+			<ul>
+				<li>Name: <%= "#{@user.first_name} #{@user.last_name}" %></li>
+				<li>Email: <%= @user.email %></li>
+				<li>Favorite genres: n/a</li>
+				<li>Friends</li>
+			</ul>
+		</div>
+		<div class="col-md-8">
+				<div class="post">
+					<div class="post-info row">
+						<div class="col-md-2">
+							<%= image_tag avatar_url(@user, 64), class: 'image image-responsive' %>
+						</div>
+						<div class="col-md-10"><h1>Stefan Kupresak</h1></div>
+					</div>
+					<div class="post-content row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="post">
+					<div class="post-info row">
+						<div class="col-md-2">
+							<%= image_tag avatar_url(@user, 64), class: 'image image-responsive' %>
+						</div>
+						<div class="col-md-10"><h1>Stefan Kupresak</h1></div>
+					</div>
+					<div class="post-content row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="post">
+					<div class="post-info row">
+						<div class="col-md-2 col-xs-2">
+							<%= image_tag avatar_url(@user, 64), class: 'image image-responsive' %>
+						</div>
+						<div class="col-md-10 col-xs-10"><h1>Stefan Kupresak</h1></div>
+					</div>
+					<div class="post-content row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>

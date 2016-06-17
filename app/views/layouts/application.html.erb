@@ -33,8 +33,11 @@
 					<li>
 						<%= link_to edit_user_registration_path do %>
 							<span class="glyphicon glyphicon-pencil"></span>
-							Edit profile
+							Edit account
 						<% end %>
+					</li>
+					<li>
+						<%= link_to "Show profile", user_path(current_user) %>
 					</li>
 					<% else %>
 					<li>
