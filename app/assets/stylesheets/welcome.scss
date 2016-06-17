@@ -2,6 +2,14 @@ body {
 	padding-top: 50px;
 }
 
+#alerts {
+	position: fixed;
+	z-index: 99;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 #xs-background {
 	background-color: #333333;
 	width: 100%;

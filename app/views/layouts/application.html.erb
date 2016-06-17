@@ -23,29 +23,44 @@
 			</div>
 			<div class="collapse navbar-collapse" id="mainNavigation">
 				<ul class="nav navbar-nav">
-					<li>
 					<% if user_signed_in? %>
+					<li>
 						<%= link_to destroy_user_session_path, method: :delete do %>
 							<span class="glyphicon glyphicon-user"></span>
 							Log out
 						<% end %>
+					</li>
+					<li>
+						<%= link_to edit_user_registration_path do %>
+							<span class="glyphicon glyphicon-pencil"></span>
+							Edit profile
+						<% end %>
+					</li>
 					<% else %>
+					<li>
 						<%= link_to new_user_session_path do %>
 							<span class="glyphicon glyphicon-user"></span>
 							Log in
-						<% end %>	
+						<% end %>
+					</li>	
 					<% end %>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
+
 	<% flash.each do |type, msg| %>
-		<div class="container-fluid">
-			<div class="alert alert-<%= get_type(type) %>"><%= msg %></div>
+		<div id="alerts">
+			<div class="alert alert-<%= get_type(type) %> alert-dismissible fade in" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<%= msg %>
+			</div>
 		</div>
 	<% end %>
+
 	<%= yield %>
 
 </body>
