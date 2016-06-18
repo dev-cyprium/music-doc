@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
 
   # Friendships
+  has_many :friendships
+  has_many :friends, through: :friendships
 end
