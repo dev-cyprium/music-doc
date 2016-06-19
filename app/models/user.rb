@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
   has_many :following, through: :active_relationships
 
   def follow(other_user)
-    active_relationships.build(following_id: other_user.id)
+    active_relationships.create(following_id: other_user.id)
   end
 
   def unfollow(other_user)
