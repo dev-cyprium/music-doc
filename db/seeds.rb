@@ -1,4 +1,4 @@
-100.times do |index|
+50.times do |index|
 	u = User.new(
 		first_name: "Name_#{index}", 
 		last_name: "Exampling",

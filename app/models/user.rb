@@ -9,5 +9,10 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
 
   # Folowers
-  
+  has_many :passive_relationships,
+    class_name: 'Relationship',
+    foreign_key: 'following_id',
+    dependent: :destroy
+
+
 end
