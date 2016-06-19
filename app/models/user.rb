@@ -8,7 +8,6 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :last_name, presence: true
 
-  # Friendships TODO: change to follow/unfollow
-  has_many :friendships
-  has_many :friends, through: :friendships
+  # Folowers
+  
 end
