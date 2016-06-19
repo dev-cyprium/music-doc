@@ -14,5 +14,11 @@ class User < ActiveRecord::Base
     foreign_key: 'following_id',
     dependent: :destroy
 
+  has_many :active_relationships,
+    class_name: 'Relationship',
+    foreign_key: 'follower_id',
+    dependent: :destroy
 
+  has_many :followers, through: :passive_relationships
+  has_many :following, through: :active_relationships
 end
