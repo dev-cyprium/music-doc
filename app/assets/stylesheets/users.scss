@@ -1,41 +1,28 @@
-#user-top {
+header {
 	position: relative;
-	height: 250px;
-	background-color: #80ff80;
-	img {
+	height: 150px;
+	background-color: #a6a6a6;
+	#profile-pic {
 		position: absolute;
+		border-radius: 100%;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
-		border-radius: 100%;
+		transform: translate(-50%, -50%);
 	}
 	h1 {
+		display: block;
 		position: absolute;
-		top: 60%;
-		left: 50%;
-		transform: translateX(-50%);
+		width: 100%;
+		text-align: center;
+		top: 65%;
+		font-size: 1.5em;
 	}
 }
 
-.seperator {
-	margin-bottom: 15px;
-	width: 100%;
-	height: 5px;
-	background-color: #00cc44;
-}
-
-.post {
-	background-color: white;
-	margin-bottom: 20px;
-	.post-info {
-		.col-md-2 {
-			text-align: right;
-		}
-		h1 {
-			text-align: left;
-			line-height: 64px;
-			padding: 0;
-			margin: 0;
-		}
+#user-about {
+	background-color: #4d4d4d;
+	color: #e6e6e6;
+	h3, h4 {
+		text-align: center;
 	}
 }
