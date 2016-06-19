@@ -24,5 +24,7 @@ module MusicDock
     config.active_record.raise_in_transactional_callbacks = true
  
     config.assets.initialize_on_precompile = false
+
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
